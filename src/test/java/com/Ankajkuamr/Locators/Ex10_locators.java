@@ -1,4 +1,4 @@
-package Locators;
+package com.Ankajkuamr.Locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
