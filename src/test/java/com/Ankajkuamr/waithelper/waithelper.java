@@ -37,7 +37,7 @@ public class waithelper {
         wait.until(ExpectedConditions.textToBePresentInElement(element, "Your email, password, IP address or location did not match"));
 
     }
-    public void waitForVisibility(WebDriver driver,int timeInSeconds, String xpath){
+    public static void waitForVisibility(WebDriver driver,int timeInSeconds, String xpath){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 
