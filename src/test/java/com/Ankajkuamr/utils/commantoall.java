@@ -8,13 +8,13 @@ public class commantoall {
 
     public WebDriver driver;
 
-    public  void openBrowser(WebDriver driver, String url){
+    public  static void openBrowser(WebDriver driver, String url){
         driver.get(url);
         driver.manage().window().maximize();
     }
 
 
-    public void closeBrowser(WebDriver driver){
+    public static void closeBrowser(WebDriver driver){
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
